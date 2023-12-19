@@ -40,3 +40,10 @@ function checkAgeAfterThreeYears(age: number, name?: string): string { // here n
 console.log(checkAgeAfterThreeYears(20, 'Dazzler'))
 
 // --------------------------------------------
+
+let myName = 'Saman';
+console.log(typeof myName);  //prints the type of myName
+//* Decides the type of myName looking at its assigned value type ---> "Saman";
+//* This is called Type inference.
+
+// --------------------------------------------
