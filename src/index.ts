@@ -100,3 +100,15 @@ function sum(numberOne: number, numberTwo: number): void {
 sum(1, 2);
 
 // --------------------------------------------
+
+function calculateSum(...values:number[]):number {   // rest parameters
+    let count:number = 0;
+    for (let val of values) {
+        count+=val;
+    }
+    return count;
+}
+
+console.log(calculateSum(10,20,30,40,50,60))
+
+// --------------------------------------------

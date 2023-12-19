@@ -52,3 +52,11 @@ function sum(numberOne, numberTwo) {
     console.log(numberOne + numberTwo);
 }
 sum(1, 2);
+function calculateSum(...values) {
+    let count = 0;
+    for (let val of values) {
+        count += val;
+    }
+    return count;
+}
+console.log(calculateSum(10, 20, 30, 40, 50, 60));
