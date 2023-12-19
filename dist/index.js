@@ -38,3 +38,17 @@ const waveIsuru = function (message) {
     console.log(message);
 };
 waveIsuru("Helloo!");
+function triggerAlarm(alarmType, isSecured) {
+    if (isSecured) {
+        console.log(`${alarmType} TRIGGERED....`);
+    }
+    else {
+        console.log(`${alarmType} TO BE TRIGGERED...`);
+    }
+}
+triggerAlarm("BUGGLAR");
+triggerAlarm("HAMILLS BELL", true);
+function sum(numberOne, numberTwo) {
+    console.log(numberOne + numberTwo);
+}
+sum(1, 2);

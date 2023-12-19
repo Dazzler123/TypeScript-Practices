@@ -79,4 +79,24 @@ const waveIsuru = function (message: string): void { //function expression
 waveIsuru("Helloo!")
 // * In JS, we can send a parameter as an argument, or can assign an function
 //   to a variable.
+
+// --------------------------------------------
+
+function triggerAlarm(alarmType: string, isSecured?: boolean): void { //function expression
+    if (isSecured) {
+        console.log(`${alarmType} TRIGGERED....`);
+    } else {
+        console.log(`${alarmType} TO BE TRIGGERED...`)
+    }
+}
+
+triggerAlarm("BUGGLAR",);
+triggerAlarm("HAMILLS BELL", true);
+
+function sum(numberOne: number, numberTwo: number): void {
+    console.log(numberOne + numberTwo);
+}
+
+sum(1, 2);
+
 // --------------------------------------------
