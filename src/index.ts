@@ -9,7 +9,6 @@ let vehicles: string[] = ['Car', 'Bike', 'Lorry'];  //a string array
 let student: { name: string, age: number } = {name: 'Ranil', age: 90}; //an object with given types for properties
 
 
-
 // --------------------------------------------
 interface Animals {
     name: string;
@@ -20,5 +19,12 @@ interface Animals {
 let dog: Animals = {name: 'Wolfy', breed: 'Husky', height: 1};
 console.log(dog.name);
 
+// --------------------------------------------
+
+function getAgeAfterThreeYears(age: number, name?: string): number { // here name parameter is optional (not required)
+    return age += 3;
+}
+
+let myAge: number = getAgeAfterThreeYears(20,'Dazzler');
 
 // --------------------------------------------
