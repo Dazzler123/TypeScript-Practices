@@ -52,3 +52,8 @@ let numList: number[] = [10, 20, 30, 40];
 console.log(numList[0]);  //prints value of 0 index element
 
 // --------------------------------------------
+
+let stringList: Array<string>= ['','',''];
+// let stringListTwo: Array<string>= ['','','',10]; //error here - array with generic type 'string'
+                                                    // (only string containing array)
+// --------------------------------------------
