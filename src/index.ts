@@ -25,6 +25,18 @@ function getAgeAfterThreeYears(age: number, name?: string): number { // here nam
     return age += 3;
 }
 
-let myAge: number = getAgeAfterThreeYears(20,'Dazzler');
+let myAge: number = getAgeAfterThreeYears(20, 'Dazzler');
+
+// --------------------------------------------
+
+function checkAgeAfterThreeYears(age: number, name?: string): string { // here name parameter is optional (not required)
+    if (age < 5) {
+        return `Hello there ${name}!`;   //we can use variables within strings using ${}
+    } else {
+        return `Hello there ${name}!, you are ${age += 3} years old now.`;
+    }
+}
+
+console.log(checkAgeAfterThreeYears(20, 'Dazzler'))
 
 // --------------------------------------------
