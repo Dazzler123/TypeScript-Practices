@@ -34,3 +34,7 @@ const helloIsuru = (message) => {
     return message;
 };
 console.log(helloIsuru("Kamal"));
+const waveIsuru = function (message) {
+    console.log(message);
+};
+waveIsuru("Helloo!");

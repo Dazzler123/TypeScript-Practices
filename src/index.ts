@@ -67,9 +67,16 @@ let boy: [string, number] = ["Dasindu", 20]; // can give types like so as well
 
 // --------------------------------------------
 
-const helloIsuru = (message:string):string=> {
+const helloIsuru = (message: string): string => { //arrow function
     return message;
 }
 console.log(helloIsuru("Kamal"));
 
+// --------------------------------------------
+const waveIsuru = function (message: string): void { //function expression
+    console.log(message);
+}
+waveIsuru("Helloo!")
+// * In JS, we can send a parameter as an argument, or can assign an function
+//   to a variable.
 // --------------------------------------------
