@@ -29,3 +29,8 @@ console.log(numList[0]);
 let stringList = ['', '', ''];
 stringList.push('Hello');
 stringList.pop();
+let boy = ["Dasindu", 20];
+const helloIsuru = (message) => {
+    return message;
+};
+console.log(helloIsuru("Kamal"));

@@ -61,3 +61,15 @@ let stringList: Array<string> = ['', '', ''];
 stringList.push('Hello')  //adds new element to list
 stringList.pop() // removes last element in the list
 // --------------------------------------------
+
+let boy: [string, number] = ["Dasindu", 20]; // can give types like so as well
+                                             // * This is called a "Tuple"
+
+// --------------------------------------------
+
+const helloIsuru = (message:string):string=> {
+    return message;
+}
+console.log(helloIsuru("Kamal"));
+
+// --------------------------------------------
