@@ -53,7 +53,11 @@ console.log(numList[0]);  //prints value of 0 index element
 
 // --------------------------------------------
 
-let stringList: Array<string>= ['','',''];
+let stringList: Array<string> = ['', '', ''];
 // let stringListTwo: Array<string>= ['','','',10]; //error here - array with generic type 'string'
-                                                    // (only string containing array)
+// (only string containing array)
+// --------------------------------------------
+
+stringList.push('Hello')  //adds new element to list
+stringList.pop() // removes last element in the list
 // --------------------------------------------

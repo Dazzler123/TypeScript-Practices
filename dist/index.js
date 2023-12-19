@@ -26,3 +26,6 @@ let myName = 'Saman';
 console.log(typeof myName);
 let numList = [10, 20, 30, 40];
 console.log(numList[0]);
+let stringList = ['', '', ''];
+stringList.push('Hello');
+stringList.pop();
