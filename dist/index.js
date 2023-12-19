@@ -22,3 +22,7 @@ function checkAgeAfterThreeYears(age, name) {
     }
 }
 console.log(checkAgeAfterThreeYears(20, 'Dazzler'));
+let myName = 'Saman';
+console.log(typeof myName);
+let numList = [10, 20, 30, 40];
+console.log(numList[0]);

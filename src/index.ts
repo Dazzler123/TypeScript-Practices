@@ -47,3 +47,8 @@ console.log(typeof myName);  //prints the type of myName
 //* This is called Type inference.
 
 // --------------------------------------------
+
+let numList: number[] = [10, 20, 30, 40];
+console.log(numList[0]);  //prints value of 0 index element
+
+// --------------------------------------------
