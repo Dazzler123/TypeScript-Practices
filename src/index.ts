@@ -63,3 +63,37 @@ class Customer {
 const customer = new Customer('Dazzler', 20, {city: 'Gampaha', zipCode: '11400'});
 console.log(customer);
 console.log(customer.address);
+
+
+// ============== Encapsulation ===================
+
+class CustomerDetail {
+    name: string;
+    age: number;
+    address: {
+        city: string;
+        zipCode: string;
+    }
+
+    constructor(name: string, age: number, address: { city: string, zipCode: string }) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public setName(name: string) {
+        this.name = name;
+    }
+
+    public setAge(age: number) {
+        if (age < 0) {
+            return;
+        }
+        this.age = age;
+    }
+}
+
+const customerDetail = new CustomerDetail('Dazzler', 20, {city: 'Gampaha', zipCode: '11400'});
+customerDetail.setName('Dasindu');
+customerDetail.setAge(21);
+console.log(customerDetail);
