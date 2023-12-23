@@ -106,14 +106,51 @@ interface CommonCustomerDetail {
     presentAge: number;
 }
 
-interface Customer extends CommonCustomerDetail{
-    portalUser:boolean;
+interface Customer extends CommonCustomerDetail {
+    portalUser: boolean;
 }
 
-interface Vendor extends CommonCustomerDetail{
+interface Vendor extends CommonCustomerDetail {
 
 }
+
 // always same type (interface --> to --> interface) EXTENDS !!!
 // always difference type (class --> to --> interface OR vice versa..) IMPLEMENTS !!!
+
+
+// ============== Inheritance ===================
+
+class Animal {
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Cow extends Animal {
+    breed: string;
+
+    constructor(name: string, age: number, breed: string) {
+        super(name, age);
+        this.breed = breed;
+    }
+
+    public sound(): void {
+        console.log(`${this.name} sound...`);
+    }
+}
+
+const animal = new Animal('Cow', 2);
+const cow = new Cow('Sheep', 2, 'Waltation');
+console.log(animal);
+console.log(cow);
+cow.sound();
+
+
+
+
 
 

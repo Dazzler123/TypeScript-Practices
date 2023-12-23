@@ -54,3 +54,23 @@ const customerDetail = new CustomerDetail('Dazzler', 20, { city: 'Gampaha', zipC
 customerDetail.setName('Dasindu');
 customerDetail.setAge(21);
 console.log(customerDetail);
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Cow extends Animal {
+    constructor(name, age, breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+    sound() {
+        console.log(`${this.name} sound...`);
+    }
+}
+const animal = new Animal('Cow', 2);
+const cow = new Cow('Sheep', 2, 'Waltation');
+console.log(animal);
+console.log(cow);
+cow.sound();
