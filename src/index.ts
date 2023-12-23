@@ -97,3 +97,23 @@ const customerDetail = new CustomerDetail('Dazzler', 20, {city: 'Gampaha', zipCo
 customerDetail.setName('Dasindu');
 customerDetail.setAge(21);
 console.log(customerDetail);
+
+
+// ============== extends keyword ===================
+
+interface CommonCustomerDetail {
+    name: string;
+    presentAge: number;
+}
+
+interface Customer extends CommonCustomerDetail{
+    portalUser:boolean;
+}
+
+interface Vendor extends CommonCustomerDetail{
+
+}
+// always same type (interface --> to --> interface) EXTENDS !!!
+// always difference type (class --> to --> interface OR vice versa..) IMPLEMENTS !!!
+
+
