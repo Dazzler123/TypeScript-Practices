@@ -69,7 +69,7 @@ console.log(customer.address);
 
 class CustomerDetail {
     name: string;
-    age: number;
+    readonly age: number; // this is read only now
     address: {
         city: string;
         zipCode: string;
@@ -89,7 +89,7 @@ class CustomerDetail {
         if (age < 0) {
             return;
         }
-        this.age = age;
+        // this.age = age;
     }
 }
 

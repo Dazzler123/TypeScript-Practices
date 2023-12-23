@@ -48,7 +48,6 @@ class CustomerDetail {
         if (age < 0) {
             return;
         }
-        this.age = age;
     }
 }
 const customerDetail = new CustomerDetail('Dazzler', 20, { city: 'Gampaha', zipCode: '11400' });
