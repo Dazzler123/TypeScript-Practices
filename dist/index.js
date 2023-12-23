@@ -25,3 +25,13 @@ console.log(studentObjTwo.name);
 console.log(studentObjTwo.address);
 console.log(studentObjTwo.address.city);
 console.log(typeof studentObjTwo);
+class Customer {
+    constructor(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+}
+const customer = new Customer('Dazzler', 20, { city: 'Gampaha', zipCode: '11400' });
+console.log(customer);
+console.log(customer.address);
