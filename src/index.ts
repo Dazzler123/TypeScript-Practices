@@ -16,3 +16,30 @@ console.log(studentObj.name);
 console.log(studentObj.address);
 console.log(studentObj.address.city);
 console.log(typeof studentObj);
+
+
+//====== Interface based ========
+interface Student {
+    name: String;
+    age: number;
+    address: {
+        city: string;
+        zipCode: string;
+    }
+}
+
+const studentObjTwo: Student = {
+    name: 'Mahinda',
+    age: 90,
+    address: {
+        city: 'Gampaha',
+        zipCode: '11400'
+    }
+};
+
+console.log(studentObjTwo)
+console.log(studentObjTwo.name);
+console.log(studentObjTwo.address);
+console.log(studentObjTwo.address.city);
+console.log(typeof studentObjTwo);
+
