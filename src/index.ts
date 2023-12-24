@@ -330,11 +330,11 @@ interface StudentType{
     isActive:boolean;
 }
 
-type StudentKeys = keyof Student; // 'name'  'age'  'isActive'
+type StudentKeys = keyof StudentType; // 'name'  'age'  'isActive'
 
 const studentNameType: StudentKeys="name";
 const studentAgeType:StudentKeys="age";
-// const studentAvailability:StudentKeys="isActive";
+const studentAvailability:StudentKeys="isActive";
 
 
 

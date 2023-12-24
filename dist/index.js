@@ -174,3 +174,4 @@ function trigger(pet) {
 }
 const studentNameType = "name";
 const studentAgeType = "age";
+const studentAvailability = "isActive";
