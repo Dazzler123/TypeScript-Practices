@@ -279,6 +279,26 @@ function collectData(value: OldDog | OldCat) {
 }
 
 
+// ============== Assertions ===================
+interface Vehicle {
+    type:string;
+}
+interface Car extends Vehicle{
+    drive():void;
+}
+interface Van extends Vehicle{
+    start():void;
+}
+interface Bus extends Vehicle {
+    stop():void;
+}
+function execute(vehicle: Vehicle):void {
+    // (vehicle as Car);
+    // (vehicle as Van);
+    // (vehicle as Bus);
+}
+
+
 
 
 

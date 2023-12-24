@@ -159,3 +159,5 @@ function collectData(value) {
         console.log(value.age);
     }
 }
+function execute(vehicle) {
+}
