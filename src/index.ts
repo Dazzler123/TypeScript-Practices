@@ -256,6 +256,29 @@ executor(new Dog());
 executor(new Cat());
 
 
+// ============== Type Guards with in ===================
+class OldDog {
+    name:string;
+    constructor(name:string) {
+        this.name = name;
+    }
+}
+class OldCat {
+    age:number;
+    constructor(age:number) {
+        this.age = age;
+    }
+}
+
+function collectData(value: OldDog | OldCat) {
+    if ('name' in value) {
+        console.log(value.name);
+    } else {
+        console.log(value.age);
+    }
+}
+
+
 
 
 

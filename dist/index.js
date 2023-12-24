@@ -141,3 +141,21 @@ function executor(value) {
 }
 executor(new Dog());
 executor(new Cat());
+class OldDog {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class OldCat {
+    constructor(age) {
+        this.age = age;
+    }
+}
+function collectData(value) {
+    if ('name' in value) {
+        console.log(value.name);
+    }
+    else {
+        console.log(value.age);
+    }
+}
