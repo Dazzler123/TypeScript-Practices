@@ -149,6 +149,27 @@ console.log(animal);
 console.log(cow);
 cow.sound();
 
+// ============== Abstraction ===================
+abstract class Phone {
+    private displaySize:number;
+    constructor(displaySize:number) {
+        this.displaySize = displaySize;
+    }
+
+    call () : void {
+        console.log('Calling...!');
+    }
+
+    message () : void {
+        console.log('Messaging...!')
+    }
+
+    abstract fileTransfer () : void; // no implementation yet
+    //abstract function should only be declared inside a ABSTRACT class!!
+    //these are not CONCRETE functions
+}
+
+
 
 
 
