@@ -182,6 +182,15 @@ let stringValue = getData<string>('Nimal');
 console.log(numberValue);
 console.log(stringValue);
 
+// ============== Generics - Reusable Components===================
+interface Shape<T> {
+    type:T;
+}
+
+let s1:Shape<string>={type:'Rectangle'};
+let s1Radius:Shape<number>={type:10};
+let s1IsLarge:Shape<boolean>={type:false};
+
 
 
 

@@ -92,3 +92,6 @@ let numberValue = getData(10);
 let stringValue = getData('Nimal');
 console.log(numberValue);
 console.log(stringValue);
+let s1 = { type: 'Rectangle' };
+let s1Radius = { type: 10 };
+let s1IsLarge = { type: false };
