@@ -100,3 +100,19 @@ function showLength(value) {
 }
 showLength([10, 20, 30]);
 showLength('Muthu');
+function divide(num1, num2) {
+    if (num2 == 0) {
+        throw new Error('Invalid Input on num2!');
+    }
+    return num1 / num2;
+}
+try {
+    let answer = divide(40, 2);
+    console.log(answer);
+}
+catch (error) {
+    console.log(error);
+}
+finally {
+    console.log('Inside Finally block...');
+}

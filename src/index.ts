@@ -203,8 +203,25 @@ function showLength<T extends ElementLength>(value: T): void {
 showLength([10, 20, 30]);
 showLength('Muthu');
 // showLength(false); // cannot assign boolean (because string or arrays does
-                        // have a length but boolean does not.
+// have a length but boolean does not.
 
+
+// ============== Exception Handling - try, catch & finally ===================
+function divide(num1: number, num2: number): number {
+    if (num2 == 0) {
+        throw new Error('Invalid Input on num2!');
+    }
+    return num1 / num2;
+}
+
+try {
+    let answer = divide(40, 2);
+    console.log(answer);
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log('Inside Finally block...');
+}
 
 
 
