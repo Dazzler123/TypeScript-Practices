@@ -121,3 +121,23 @@ function setStringData(value) {
 }
 setStringData('String data..');
 setStringData(130);
+class Dog {
+    sound() {
+        console.log('Dog Sounds....');
+    }
+}
+class Cat {
+    walk() {
+        console.log('Cat walking...');
+    }
+}
+function executor(value) {
+    if (value instanceof Dog) {
+        value.sound();
+    }
+    else {
+        value.walk();
+    }
+}
+executor(new Dog());
+executor(new Cat());

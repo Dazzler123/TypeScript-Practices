@@ -233,6 +233,28 @@ function setStringData(value:string | number):void { // can define multiple type
 setStringData('String data..');
 setStringData(130);
 
+// ============== Type Guards with instanceOf ===================
+class Dog {
+    sound():void {
+        console.log('Dog Sounds....');
+    }
+}
+class Cat {
+    walk():void{
+        console.log('Cat walking...');
+    }
+}
+function executor(value:Dog | Cat) {
+    if (value instanceof Dog) {
+        value.sound();
+    } else {
+        value.walk();
+    }
+}
+
+executor(new Dog());
+executor(new Cat());
+
 
 
 
