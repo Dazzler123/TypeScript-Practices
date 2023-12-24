@@ -293,9 +293,9 @@ interface Bus extends Vehicle {
     stop():void;
 }
 function execute(vehicle: Vehicle):void {
-    // (vehicle as Car);
-    // (vehicle as Van);
-    // (vehicle as Bus);
+    (vehicle as Car).drive();
+    (vehicle as Van).start();
+    (vehicle as Bus).stop();
 }
 
 

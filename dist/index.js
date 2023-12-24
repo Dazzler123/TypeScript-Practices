@@ -160,4 +160,7 @@ function collectData(value) {
     }
 }
 function execute(vehicle) {
+    vehicle.drive();
+    vehicle.start();
+    vehicle.stop();
 }
