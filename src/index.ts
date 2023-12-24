@@ -182,14 +182,27 @@ let stringValue = getData<string>('Nimal');
 console.log(numberValue);
 console.log(stringValue);
 
-// ============== Generics - Reusable Components===================
+// ============== Generics - Reusable Components ===================
 interface Shape<T> {
-    type:T;
+    type: T;
 }
 
-let s1:Shape<string>={type:'Rectangle'};
-let s1Radius:Shape<number>={type:10};
-let s1IsLarge:Shape<boolean>={type:false};
+let s1: Shape<string> = {type: 'Rectangle'};
+let s1Radius: Shape<number> = {type: 10};
+let s1IsLarge: Shape<boolean> = {type: false};
+
+// ============== Generics - Constraints ===================
+interface ElementLength {
+    length: number;
+}
+
+function showLength<T extends ElementLength>(value: T): void {
+    console.log(value.length);
+}
+
+showLength([10, 20, 30]);
+showLength('Muthu');
+// showLength(false); // cannot assign boolean
 
 
 

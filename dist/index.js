@@ -95,3 +95,8 @@ console.log(stringValue);
 let s1 = { type: 'Rectangle' };
 let s1Radius = { type: 10 };
 let s1IsLarge = { type: false };
+function showLength(value) {
+    console.log(value.length);
+}
+showLength([10, 20, 30]);
+showLength('Muthu');
