@@ -116,3 +116,8 @@ catch (error) {
 finally {
     console.log('Inside Finally block...');
 }
+function setStringData(value) {
+    console.log(typeof value);
+}
+setStringData('String data..');
+setStringData(130);

@@ -225,5 +225,15 @@ try {
 
 
 
+// ============== Type Guards ===================
+function setStringData(value:string | number):void { // can define multiple types
+    console.log(typeof value);
+}
+
+setStringData('String data..');
+setStringData(130);
+
+
+
 
 
