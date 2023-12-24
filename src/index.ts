@@ -323,5 +323,19 @@ function trigger(pet: MyPet) {
 }
 
 
+// ============== key of & typeOf ===================
+interface StudentType{
+    name:string;
+    age:number;
+    isActive:boolean;
+}
+
+type StudentKeys = keyof Student; // 'name'  'age'  'isActive'
+
+const studentNameType: StudentKeys="name";
+const studentAgeType:StudentKeys="age";
+// const studentAvailability:StudentKeys="isActive";
+
+
 
 

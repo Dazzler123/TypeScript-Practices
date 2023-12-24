@@ -172,3 +172,5 @@ function trigger(pet) {
         console.log('Cat');
     }
 }
+const studentNameType = "name";
+const studentAgeType = "age";
