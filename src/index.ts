@@ -151,24 +151,36 @@ cow.sound();
 
 // ============== Abstraction ===================
 abstract class Phone {
-    private displaySize:number;
-    constructor(displaySize:number) {
+    private displaySize: number;
+
+    constructor(displaySize: number) {
         this.displaySize = displaySize;
     }
 
-    call () : void {
+    call(): void {
         console.log('Calling...!');
     }
 
-    message () : void {
+    message(): void {
         console.log('Messaging...!')
     }
 
-    abstract fileTransfer () : void; // no implementation yet
+    abstract fileTransfer(): void; // no implementation yet
     //abstract function should only be declared inside a ABSTRACT class!!
     //these are not CONCRETE functions
 }
 
+
+// ============== Generics ===================
+function getData<T>(value: T): T {
+    return value;
+}
+
+let numberValue = getData<number>(10);
+let stringValue = getData<string>('Nimal');
+
+console.log(numberValue);
+console.log(stringValue);
 
 
 

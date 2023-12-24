@@ -74,3 +74,21 @@ const cow = new Cow('Sheep', 2, 'Waltation');
 console.log(animal);
 console.log(cow);
 cow.sound();
+class Phone {
+    constructor(displaySize) {
+        this.displaySize = displaySize;
+    }
+    call() {
+        console.log('Calling...!');
+    }
+    message() {
+        console.log('Messaging...!');
+    }
+}
+function getData(value) {
+    return value;
+}
+let numberValue = getData(10);
+let stringValue = getData('Nimal');
+console.log(numberValue);
+console.log(stringValue);
