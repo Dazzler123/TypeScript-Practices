@@ -202,7 +202,8 @@ function showLength<T extends ElementLength>(value: T): void {
 
 showLength([10, 20, 30]);
 showLength('Muthu');
-// showLength(false); // cannot assign boolean
+// showLength(false); // cannot assign boolean (because string or arrays does
+                        // have a length but boolean does not.
 
 
 
