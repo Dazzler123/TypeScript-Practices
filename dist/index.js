@@ -164,3 +164,11 @@ function execute(vehicle) {
     vehicle.start();
     vehicle.stop();
 }
+function trigger(pet) {
+    if (pet.name == 'myDog') {
+        console.log('Dog');
+    }
+    else {
+        console.log('Cat');
+    }
+}

@@ -299,6 +299,29 @@ function execute(vehicle: Vehicle):void {
 }
 
 
+// ============== Union Types ===================
+interface Animal {
+    name:string;
+}
+interface Dog extends Animal{
+    name:'myDog';
+    height:number;
+}
+interface Cat extends Animal{
+    name:'myCat';
+    height: number;
+}
+
+type MyPet = Dog | Cat;
+
+function trigger(pet: MyPet) {
+    if (pet.name == 'myDog') {
+        console.log('Dog');
+    } else {
+        console.log('Cat');
+    }
+}
+
 
 
 
